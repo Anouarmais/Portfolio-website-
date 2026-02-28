@@ -75,9 +75,18 @@ export default function Navbar() {
         </nav>
 
         {/* Hire Me CTA */}
-        <a href="#contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 text-white font-medium text-sm hover:bg-blue-700 transition-colors duration-200">
-          Hire Me
-        </a>
+<a
+  href="#contact"
+  className="
+    inline-flex items-center gap-2 px-6 py-3
+    rounded-lg
+    bg-blue-600 text-white font-medium text-sm
+    hover:bg-blue-700
+    transition-colors duration-200
+  "
+>
+  Hire Me
+</a>
 
         {/* Mobile burger */}
         <button
