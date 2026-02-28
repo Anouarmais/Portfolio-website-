@@ -54,6 +54,7 @@ const projects = [
         alt: 'Restervar pricing plans page with three subscription tiers for restaurant owners',
       },
     ],
+     github: 'https://github.com/Anouarmais/ReserBar',
   },
   {
     id: 2,
@@ -106,7 +107,9 @@ const projects = [
       },
     ],
     isMobile: true,
+    github: 'https://github.com/Anouarmais/NaturalFitness',
   },
+  
   {
     id: 3,
     title: 'Real Estate Website',
