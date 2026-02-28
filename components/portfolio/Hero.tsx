@@ -2,12 +2,16 @@ import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
 
 export default function Hero() {
   return (
+    
     <section
       id="hero"
       className="pt-32 pb-28 md:pt-40 md:pb-36"
       style={{ background: '#F9FAFB' }}
     >
       <div className="max-w-5xl mx-auto px-6 md:px-8">
+        <div className="bg-red-500 text-white text-4xl p-10">
+  TAILWIND TEST
+</div>
         <div className="grid md:grid-cols-[1fr_auto] items-center gap-16">
 
           {/* ── Left column ── */}
