@@ -9,9 +9,7 @@ export default function Hero() {
       style={{ background: '#F9FAFB' }}
     >
       <div className="max-w-5xl mx-auto px-6 md:px-8">
-        <div className="bg-red-500 text-white text-4xl p-10">
-  TAILWIND TEST
-</div>
+        
         <div className="grid md:grid-cols-[1fr_auto] items-center gap-16">
 
           {/* ── Left column ── */}
