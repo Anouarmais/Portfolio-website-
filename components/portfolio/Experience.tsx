@@ -134,23 +134,25 @@ export default function Experience() {
           {/* Sidebar */}
           <div className="flex flex-col gap-5">
 
-            {/* Tech */}
-            <div
-              className="fade-up delay-2 card p-6 flex flex-col gap-4"
-              style={{ background: '#FFFFFF' }}
-            >
-              <p
-                className="text-xs font-semibold uppercase tracking-widest"
-                style={{ color: '#9CA3AF' }}
-              >
-                Technologies Used
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {techUsed.map(t => (
-                  <span key={t} className="chip">{t}</span>
-                ))}
-              </div>
-            </div>
+{/* Tech */}
+<div
+  className="fade-up delay-2 card p-6 flex flex-col gap-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200"
+  style={{ background: '#F9FAFB' }} // un gris muy clarito para que los chips resalten
+>
+  <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">
+    Technologies Used
+  </p>
+  <div className="flex flex-wrap gap-2">
+    {techUsed.map(t => (
+      <span
+        key={t}
+        className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-blue-50 text-blue-800 hover:bg-blue-100 hover:text-blue-900 transition-colors duration-150"
+      >
+        {t}
+      </span>
+    ))}
+  </div>
+</div>
 
             {/* Reflection */}
             <div

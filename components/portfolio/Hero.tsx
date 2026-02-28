@@ -2,14 +2,12 @@ import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
 
 export default function Hero() {
   return (
-    
     <section
       id="hero"
       className="pt-32 pb-28 md:pt-40 md:pb-36"
       style={{ background: '#F9FAFB' }}
     >
       <div className="max-w-5xl mx-auto px-6 md:px-8">
-        
         <div className="grid md:grid-cols-[1fr_auto] items-center gap-16">
 
           {/* ── Left column ── */}
@@ -73,10 +71,13 @@ export default function Hero() {
 
             {/* Buttons */}
             <div className="fade-up delay-3 flex flex-wrap gap-3">
-              <a href="#projects" className="btn-primary">
-                View Projects
-                <ArrowRight size={15} />
-              </a>
+<a
+  href="#projects"
+  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 text-white font-medium text-sm hover:bg-blue-700 transition-colors duration-200"
+>
+  View Projects
+  <ArrowRight size={15} />
+</a>
             </div>
 
             {/* Social links */}

@@ -83,7 +83,8 @@ export default function Skills() {
 
         {/* Header */}
         <div className="flex flex-col gap-3 mb-14 fade-up">
-          <span className="label">Skills</span>
+       
+          <span className="text-blue-600 font-semibold text-lg uppercase">Skills</span>
           <h2
             className="text-2xl md:text-3xl font-bold tracking-tight text-balance"
             style={{ color: '#111827' }}

@@ -150,7 +150,8 @@ export default function Projects() {
 
         {/* Header */}
         <div className="flex flex-col gap-3 mb-12 fade-up">
-          <span className="label">Projects</span>
+          
+          <span className="text-blue-600 font-semibold text-lg uppercase">Projects</span>
           <h2
             className="text-2xl md:text-3xl font-bold tracking-tight text-balance"
             style={{ color: '#111827' }}
@@ -261,37 +262,42 @@ export default function Projects() {
             </div>
 
             {/* Tech stack */}
-            <div className="flex flex-wrap gap-2">
-              {project.tech.map(t => (
-                <span key={t} className="badge">{t}</span>
-              ))}
-            </div>
+<div className="flex flex-wrap gap-2">
+  {project.tech.map(t => (
+    <span
+      key={t}
+      className="inline-block px-3 py-1 text-sm font-medium text-blue-600 bg-blue-100 rounded-full"
+    >
+      {t}
+    </span>
+  ))}
+</div>
 
             {/* CTA buttons */}
-            <div className="flex gap-3 flex-wrap">
-              {project.id !== 3 && (
-                <a
-                  href="https://github.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-ghost"
-                >
-                  <Github size={15} />
-                  GitHub
-                </a>
-              )}
-              {project.liveDemo && (
-                <a
-                  href={project.liveDemo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary"
-                >
-                  <ExternalLink size={15} />
-                  Live Demo
-                </a>
-              )}
-            </div>
+<div className="flex gap-3 flex-wrap">
+  {project.id !== 3 && (
+    <a
+      href="https://github.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors duration-150"
+    >
+      <Github size={16} />
+      GitHub
+    </a>
+  )}
+  {project.liveDemo && (
+    <a
+      href={project.liveDemo}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-150"
+    >
+      <ExternalLink size={16} />
+      Live Demo
+    </a>
+  )}
+</div>
           </div>
 
           {/* ── Right — screenshots ── */}

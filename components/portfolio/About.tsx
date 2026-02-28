@@ -50,7 +50,9 @@ export default function About() {
 
         {/* Section header */}
         <div className="flex flex-col gap-3 mb-14 fade-up">
-          <span className="label">About</span>
+<span className="text-blue-600 font-semibold text-lg uppercase">
+  About
+</span>
           <h2
             className="text-2xl md:text-3xl font-bold tracking-tight text-balance"
             style={{ color: '#111827' }}
